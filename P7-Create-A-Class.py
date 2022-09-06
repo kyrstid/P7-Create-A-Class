@@ -1,3 +1,23 @@
+''' Program should define a class called GeoPoint that will have the following:
+    a. An init (self) method that will set two attributes (variables) called self.lat, self.lon for the location of that point. 
+        The init method will also initialize a description attribute (variable) that will start off as the empty string “”.
+    b.	A SetPoint(self, lat, lon) method that will set the values of self.lat, self.lon
+    c.	A GetPoint(self) method that will return a tuple or list with self.lat, self.lon. 
+    d.	A Distance(self, lat, lon) method that calculates the distance between self.lat, self.lon and lat, lon parameters passed in.
+    e.	A SetDescription(self, description) method that will set the objects self.description attribute (variable).
+    f.	A GetDescription(self) method that will return the objects self.description attribute.'''
+''' In the main part of your program do the following:
+        a.	Instantiate two points 
+        b.	Use the SetPoint and SetDescription methods to set each of the points locations and descriptions.
+        c.	Inside a “Do another (y/n)?” loop do the following:
+            i.	Ask the user for their location.
+            ii.	Use point1 and point2’s Distance method to find the distance from each point to the user’s location
+                    distanceToOne = point1.Distance(lat, lon)
+                    distanceToTwo = point2.Distance(lat, lon)
+            iii.	Tell the user which point they are closest to in this format:
+                    You are closest to <description> which is located at <point’s coordinates>
+            iv.	Ask “Do another (y/n)?” and loop if they respond with ‘y’. '''
+
 class GeoPoint:
 
     def init(self):
